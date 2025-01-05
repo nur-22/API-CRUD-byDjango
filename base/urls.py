@@ -5,5 +5,4 @@ from todo import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('todo.urls')),
-    path('', views.home, name='home'),
 ]

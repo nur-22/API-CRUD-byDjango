@@ -6,11 +6,6 @@ from .serializers import TaskSerializer
 from .models import Todo
 
 @api_view(['GET'])
-def home(request):
-    tasks = Todo.objects.all()
-    return render(request, 'homepage.html', {'tasks': tasks})
-
-@api_view(['GET'])
 def todoApi(request):
     api_urls = {
         'List': '/task-list/',
